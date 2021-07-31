@@ -22,11 +22,11 @@ environment:
 
 dependencies:
   firebase_auth:
-    path: /home/rambabu/Desktop/Eyantra/flutterfire-master/packages/firebase_auth/firebase_auth
+    path: ./flutterfire-master/packages/firebase_auth/firebase_auth
   firebase_core:
-      path: /home/rambabu/Desktop/Eyantra/flutterfire-master/packages/firebase_core/firebase_core
+      path: ./flutterfire-master/packages/firebase_core/firebase_core
   firebase_dynamic_links:
-      path: /home/rambabu/Desktop/Eyantra/flutterfire-master/packages/firebase_dynamic_links
+      path: ./flutterfire-master/packages/firebase_dynamic_links
   flutter:
     sdk: flutter
 
