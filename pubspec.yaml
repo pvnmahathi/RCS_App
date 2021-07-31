@@ -40,22 +40,23 @@ dependencies:
   font_awesome_flutter: ^8.12.0
   google_sign_in: ^5.0.0-nullsafety
   cloud_firestore: ^2.2.0
+  url_launcher: ^6.0.9
 
 dependency_overrides:
   firebase_auth:
-    path: /home/rambabu/Desktop/Eyantra/flutterfire-master/packages/firebase_auth/firebase_auth
+    path: ./flutterfire-master/packages/firebase_auth/firebase_auth
   firebase_auth_platform_interface:
-    path: /home/rambabu/Desktop/Eyantra/flutterfire-master/packages/firebase_auth/firebase_auth_platform_interface
+    path: ./flutterfire-master/packages/firebase_auth/firebase_auth_platform_interface
   firebase_auth_web:
-    path: /home/rambabu/Desktop/Eyantra/flutterfire-master/packages/firebase_auth/firebase_auth_web
+    path: ./flutterfire-master/packages/firebase_auth/firebase_auth_web
   firebase_core:
-    path: /home/rambabu/Desktop/Eyantra/flutterfire-master/packages/firebase_core/firebase_core
+    path: ./flutterfire-master/packages/firebase_core/firebase_core
   firebase_core_platform_interface:
-    path: /home/rambabu/Desktop/Eyantra/flutterfire-master/packages/firebase_core/firebase_core_platform_interface
+    path: ./flutterfire-master/packages/firebase_core/firebase_core_platform_interface
   firebase_core_web:
-    path: /home/rambabu/Desktop/Eyantra/flutterfire-master/packages/firebase_core/firebase_core_web
+    path: ./flutterfire-master/packages/firebase_core/firebase_core_web
   firebase_dynamic_links:
-    path: /home/rambabu/Desktop/Eyantra/flutterfire-master/packages/firebase_dynamic_links
+    path: ./flutterfire-master/packages/firebase_dynamic_links
 
 
 dev_dependencies:

@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import './sign_up_page.dart';
 import 'package:firebase_core/firebase_core.dart';
+import './signin_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -207,6 +209,15 @@ class SecondRoute extends StatelessWidget{
 //modification-vasavi-1
 class FourthRoute extends StatelessWidget{
   @override
+  _launchURL() async {
+    const url = 'https://medium.com/robotics-club-sastra';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
@@ -276,13 +287,7 @@ class FourthRoute extends StatelessWidget{
                   textColor: Colors.white,
                   padding: EdgeInsets.all(8.0),
                   splashColor: Colors.blueAccent,
-                  onPressed: (){
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context)=> EigthRoute()),
-                    );
-
-                  },
+                  onPressed: _launchURL,
                   child: Text(
                     "Blogs",
                     style: TextStyle(fontSize: 20.0),
@@ -407,7 +412,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   onPressed: () {Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context)=> FirstRoute()),
+                    MaterialPageRoute(builder: (context)=> SignInPage()),
                   );
                   },
                 ),
